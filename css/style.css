@@ -1,0 +1,29 @@
+body {
+  background-color: blue;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 100vh
+}
+
+.para {
+  color: red;
+}
+
+.para2 {
+  color: green;
+}
+
+.flexContainer {
+  display: flex;
+  padding: 0 2em;
+  justify-content: center;
+  border: solid 2px green;
+  background-color: #ddd;
+  max-width: 300px;
+}
