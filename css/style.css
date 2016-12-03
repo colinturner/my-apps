@@ -13,10 +13,14 @@ body {
 
 .para {
   color: red;
+  font-family: Lobster;
+  font-size: 3em;
 }
 
 .para2 {
   color: green;
+  font-family: Roboto;
+  font-size: 6em;
 }
 
 .flexContainer {
@@ -25,5 +29,5 @@ body {
   justify-content: center;
   border: solid 2px green;
   background-color: #ddd;
-  max-width: 300px;
+  max-width: 400px;
 }
