@@ -1,22 +1,24 @@
 // Working with Event Listeners
 
 // Create DIV element
+function fullScreen(element) {
+	var newElement = document.createElement(element);
+	newElement.style.height = "100vh";
+	document.body.appendChild(newElement);
+	return newElement;
+}
 
-var div = document.createElement("DIV");
-
-// Add height to the element
-
-div.style.height = "100vh";
-
-// Append the element to the DOM
-
-document.body.appendChild(div);
-
-// Add Event Listener
-
-div.addEventListener("mousemove", function(event) {
+function input(inputType, DOMElement, callback) {
+	DOMElement.addEventListener(inputType, function(event) {
 	var x = event.clientX;
 	var y = event.clientY;
-	div.textContent = x + "," + y;
-	div.style.backgroundColor = "rgb(" + x + ", " + y + ", 100)";
-})
+	callback(DOMElement, x, y);
+});
+}
+
+function output(element, x, y) {
+	element.textContent = x + "," + y;
+	element.style.backgroundColor = "rgb(" + x + ", " + y + ", 100)";
+}
+
+input("mousemove", fullScreen("DIV"), output);
