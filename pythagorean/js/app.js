@@ -1,3 +1,3 @@
-var newElem = document.body.createElement("p");
-newElem.textContent = "hello";
-document.body.appendChild(newElem);
+document.addEventListener("mousemove", function(event){
+	console.log(event);
+})
