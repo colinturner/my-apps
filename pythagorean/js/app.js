@@ -1,3 +1,3 @@
-document.addEventListener("mousemove", function(event){
-	console.log(event);
-})
+document.addEventListener("mousemove", function(root){
+	document.root(background-color) = "blue";
+});
